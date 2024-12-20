@@ -72,23 +72,6 @@ jobs:
           echo "$body" >> $GITHUB_OUTPUT
           echo "EOF" >> $GITHUB_OUTPUT
 
-      - name: Update Changelog
-        uses: stefanzweifel/changelog-updater-action@v1
-        with:
-          latest-version: ${{ steps.bump_version.outputs.new_tag }}
-          release-notes: ${{ steps.generate_release_notes.outputs.body }}
-          path-to-changelog: "CHANGELOG.md"
-
-      - name: Amend updated CHANGELOG
-        env:
-          GITHUB_TOKEN: ${{ steps.get_workflow_token.outputs.token }}
-        run: |
-          git config user.name "fuelviews-app[bot]"
-          git config user.email "fuelviews-app[bot]@users.noreply.github.com"
-          git add CHANGELOG.md
-          git commit --amend --no-edit
-          git push origin main --force
-
       - name: Release
         id: release
         uses: softprops/action-gh-release@v2
