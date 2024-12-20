@@ -1,12 +1,12 @@
 <?php
 
-namespace VendorName\Skeleton;
+namespace Fuelviews\RedirectIfNotFound;
 
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
-use VendorName\Skeleton\Commands\SkeletonCommand;
+use Fuelviews\RedirectIfNotFound\Commands\RedirectIfNotFoundCommand;
 
-class SkeletonServiceProvider extends PackageServiceProvider
+class RedirectIfNotFoundServiceProvider extends PackageServiceProvider
 {
     public function configurePackage(Package $package): void
     {
@@ -16,10 +16,10 @@ class SkeletonServiceProvider extends PackageServiceProvider
          * More info: https://github.com/spatie/laravel-package-tools
          */
         $package
-            ->name('skeleton')
+            ->name('app-redirect-if-not-found')
             ->hasConfigFile()
             ->hasViews()
-            ->hasMigration('create_migration_table_name_table')
-            ->hasCommand(SkeletonCommand::class);
+            ->hasMigration('create_app_redirect_if_not_found_table')
+            ->hasCommand(RedirectIfNotFoundCommand::class);
     }
 }

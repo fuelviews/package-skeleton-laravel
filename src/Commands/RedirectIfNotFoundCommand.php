@@ -1,12 +1,12 @@
 <?php
 
-namespace VendorName\Skeleton\Commands;
+namespace Fuelviews\RedirectIfNotFound\Commands;
 
 use Illuminate\Console\Command;
 
-class SkeletonCommand extends Command
+class RedirectIfNotFoundCommand extends Command
 {
-    public $signature = 'skeleton';
+    public $signature = 'app-redirect-if-not-found';
 
     public $description = 'My command';
 
