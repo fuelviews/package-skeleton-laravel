@@ -2,9 +2,9 @@
 
 namespace Fuelviews\RedirectIfNotFound\Tests;
 
+use Fuelviews\RedirectIfNotFound\RedirectIfNotFoundServiceProvider;
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Orchestra\Testbench\TestCase as Orchestra;
-use Fuelviews\RedirectIfNotFound\RedirectIfNotFoundServiceProvider;
 
 class TestCase extends Orchestra
 {
