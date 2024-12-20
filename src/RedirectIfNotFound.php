@@ -2,4 +2,6 @@
 
 namespace Fuelviews\RedirectIfNotFound;
 
-class RedirectIfNotFound {}
+class RedirectIfNotFound
+{
+}
