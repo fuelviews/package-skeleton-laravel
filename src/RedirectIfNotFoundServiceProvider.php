@@ -2,9 +2,9 @@
 
 namespace Fuelviews\RedirectIfNotFound;
 
+use Fuelviews\RedirectIfNotFound\Middleware\RedirectIfNotFound;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
-use Fuelviews\RedirectIfNotFound\Middleware\RedirectIfNotFound;
 
 class RedirectIfNotFoundServiceProvider extends PackageServiceProvider
 {

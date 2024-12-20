@@ -14,7 +14,7 @@ class RedirectIfNotFound
     public function handle(Request $request, Closure $next): Response
     {
         // Check if the middleware should apply
-        if (!$this->shouldApplyMiddleware() || $this->isExcludedRoute($request)) {
+        if (! $this->shouldApplyMiddleware() || $this->isExcludedRoute($request)) {
             return $next($request);
         }
 
