@@ -1,3 +1,3 @@
 # Changelog
 
-All notable changes to `:package_name` will be documented in this file.
+All notable changes to `app-redirect-if-not-found` will be documented in this file.
