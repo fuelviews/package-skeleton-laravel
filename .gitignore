@@ -52,3 +52,4 @@ error_log
 .DS_Store
 /.DS_Store
 /storage/**/*
+/.php-cs-fixer.cache
